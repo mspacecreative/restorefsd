@@ -1,0 +1,17 @@
+.section {
+	padding-top: 4em;
+	padding-bottom: 4em;
+}
+.inner_container {
+	padding: 0 2em;
+	width: 100%;
+	max-width: 1280px;
+	margin-left: auto;
+	margin-right: auto;
+}
+.inner_container.narrow {
+	max-width: 800px;
+}
+footer, html {
+	background-color: #f9f9f9;
+}
