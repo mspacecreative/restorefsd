@@ -6,7 +6,8 @@ get_header(); ?>
 		
 		<h1><?php esc_html_e('Page not found'); ?></h1>
 	
-		<p><?php esc_html_e('Sorry, this page does not exist. Click '); ?><a href="<?php echo home_url(); ?>">here</a><?php esc_html_e(' to go to the home page'); ?></p>
+		<p><?php esc_html_e('Sorry, this page does not exist. Click '); ?><a href="<?php echo home_url(); ?>">here</a><?php esc_html_e(' to go to the home page.'); ?></p>
+		<p><a href="<?php echo home_url(); ?>">Home page</a></p>
 		
 	</div>
 </section>
