@@ -7,7 +7,7 @@ if ( have_posts() ): ?>
 	
 	<?php 
 	$pagetitle = get_field('hide_page_title');
-	if ( $pagetitle ==='false' ) {
+	if ( $pagetitle === false ) {
 		echo '<h1>' . the_title() . '</h1>';
 	} ?>
 	
