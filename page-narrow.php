@@ -6,7 +6,11 @@ get_header(); ?>
 	<div class="inner_container narrow">
 	<?php if ( have_posts() ): ?>
 	
-	<h1><?php the_title(); ?></h1>
+	<?php 
+	$pagetitle = get_field('hide_page_title');
+	if ( !$pagetitle ) {
+		echo '<h1>' . the_title() . '</h1>';
+	} ?>
 	
 	<?php while ( have_posts() ): the_post();
 	
