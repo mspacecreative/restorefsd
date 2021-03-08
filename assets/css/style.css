@@ -6882,7 +6882,7 @@ body {
 }
 
 form {
-	margin: 15px auto 30px;
+	margin: 15px auto 0;
 	display: flex;
 	flex-wrap: wrap;
 	margin-right: -15px;
