@@ -12,6 +12,17 @@
 .inner_container.narrow {
 	max-width: 800px;
 }
-footer, html {
+footer, html, header {
 	background-color: #f9f9f9;
+}
+header {
+	padding: 1.5em 0;
+}
+.logo {
+	max-width: 250px;
+}
+@media (max-width: 980px) {
+	.logo {
+		max-width: 180px;
+	}
 }
