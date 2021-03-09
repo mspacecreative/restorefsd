@@ -27,7 +27,7 @@
 		<header>
 			<div class="inner_container narrow">
 				<div class="logo">
-					<?php include 'assets/img/branding/restoreFSD-logo.php'; ?>
+					<h1 title="RestoreFSD"><?php include 'assets/img/branding/restoreFSD-logo.php'; ?></h1>
 				</div>
 			</div>
 		</header>

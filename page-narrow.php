@@ -8,8 +8,9 @@ get_header(); ?>
 	
 	<?php 
 	$pagetitle = get_field('hide_page_title');
+	$title = get_the_title();
 	if ( !$pagetitle ) {
-		echo '<h1>' . the_title() . '</h1>';
+		echo '<h1>' . $title . '</h1>';
 	} ?>
 	
 	<?php while ( have_posts() ): the_post();
