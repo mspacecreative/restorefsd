@@ -439,6 +439,10 @@ header {
 	background-color: #f5f5f5;
 }
 
+#contact {
+	background-color: #2ba0da;
+}
+
 .hero {
 	background-image: url(../img/backgrounds/restorefsd-header-bg.svg);
 	background-repeat: no-repeat;
