@@ -1,6 +1,8 @@
 <?php
 /* Template Name: Narrow Content */
-get_header(); ?>
+get_header();
+
+get_template_part('templates/hero'); ?>
 
 <section class="section">
 	<div class="inner_container narrow">

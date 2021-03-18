@@ -1,0 +1,12 @@
+.hero {
+	background-image: url(../img/backgrounds/restorefsd-header-bg.svg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	margin-top: 92.77px;
+}
+@media (max-width: 980px) {
+	.hero {
+		margin-top: 85px;
+	}
+}

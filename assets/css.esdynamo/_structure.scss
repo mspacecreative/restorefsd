@@ -1,13 +1,29 @@
+* {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	-webkit-font-smoothing: antialiased;
+	color: #333;
+	line-height: 1.5em;
+}
+
+section {
+	position: relative;
+}
 .section {
-	padding-top: 4em;
-	padding-bottom: 4em;
+	padding-top: 6em;
+	padding-bottom: 6em;
 }
 .inner_container {
-	padding: 0 2em;
+	padding-right: 2em;
+	padding-left: 2em;
 	width: 100%;
 	max-width: 1280px;
 	margin-left: auto;
 	margin-right: auto;
+	position: relative;
 }
 .inner_container.narrow {
 	max-width: 800px;
@@ -25,4 +41,55 @@ header {
 	.logo {
 		max-width: 180px;
 	}
+}
+.container {
+	width: 100%;
+	padding: 0;
+}
+.topBottomPadding {
+	padding-bottom: 6em;
+	padding-top: 6em;
+}
+.topPadding {
+	padding-top: 6em;
+}
+.bottomPadding {
+	padding-bottom: 6em;
+}
+.darkGreyBg {
+	background-color: $brandDarkGrey;
+}
+
+// COLUMN GUTTERS
+.row.gutterSpaceWider {
+	margin-right: -30px;
+	margin-left: -30px;
+}
+.row.gutterSpaceWider > .col {
+	padding-right: 30px;
+	padding-left: 30px;
+}
+
+// BOXED ITEMS
+.boxed {
+	display: flex;
+	flex-direction: column;
+	padding: 2em;
+	border: 2px solid #e9e9e9;
+	height: 100%;
+}
+.arrow_container {
+	max-width: 40px;
+	margin-top: auto;
+	width: 40px;
+    height: 20px;
+	transition: .25s ease-in-out;
+}
+.boxed h3:hover ~ .arrow_container {
+	transition: .25s ease-in-out;
+	transform: translate(10px, 0);
+}
+
+#press {
+	background-color: $brandLightGrey;
 }

@@ -6,7 +6,7 @@
     <head>
         <meta charset="<?php bloginfo( 'charset' ); ?>">
         <title><?php wp_title( '' ); ?><?php if ( wp_title( '', false ) ) { echo ' : '; } ?><?php bloginfo( 'name' ); ?></title>
-        <m<link rel="alternate" type="application/rss+xml" title="<?php bloginfo( 'name' ); ?>" href="<?php bloginfo( 'rss2_url' ); ?>" />
+        <link rel="alternate" type="application/rss+xml" title="<?php bloginfo( 'name' ); ?>" href="<?php bloginfo( 'rss2_url' ); ?>" />
 		
 		<link href="//www.google-analytics.com" rel="dns-prefetch">
 		<link href="<?php echo esc_url( get_template_directory_uri() ); ?>/assets/img/icons/favicon.ico" rel="shortcut icon">
@@ -24,10 +24,23 @@
 		<p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 		<![endif]-->
 	
+		<!-- menu -->
+		<?php get_template_part('templates/menu'); ?>
+		<!-- / menu -->
+		
 		<header>
-			<div class="inner_container narrow">
+			<div class="inner_container">
 				<div class="logo">
 					<h1 title="RestoreFSD"><?php include 'assets/img/branding/restoreFSD-logo.php'; ?></h1>
 				</div>
+				
+				<!-- MENU TOGGLE -->
+				<button class="hamburger hamburger--spin" type="button">
+					<span class="hamburger-box">
+						<span class="hamburger-inner"></span>
+					</span>
+				</button>
+				<!-- / MENU TOGGLE -->
+				
 			</div>
 		</header>

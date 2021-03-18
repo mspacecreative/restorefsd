@@ -1,0 +1,24 @@
+header {
+	width: 100%;
+	z-index: 999999;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+header .inner_container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.logo {
+	width: 100%;
+}
+header.down {
+	transition: .25s ease-in-out;
+	transform: translate(0,-100%);
+}
+header.up {
+	transition: .25s ease-in-out;
+	transform: translate(0,0);
+	position: fixed;
+}
