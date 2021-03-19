@@ -64,3 +64,45 @@ a {
 p:last-of-type {
 	margin-bottom: 0;
 }
+
+// SOCIAL MEDIA
+.social_media {
+	padding: 0;
+	display: flex;
+	margin: 0 25px 0 0;
+}
+.social_media li {
+	text-indent: 0;
+	margin-right: 20px;
+	margin-bottom: 0;
+}
+.social_media li:last-of-type {
+	margin-right: 0;
+}
+.social_media li::before {
+	display: none;
+}
+.social_media a {
+	color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #000;
+	width: 25px;
+	height: 25px;
+	font-size: 15px;
+}
+.footer_logo {
+	max-width: 200px;
+}
+.menuInner .social_media a {
+	background-color: #fff;
+}
+.menuInner .social_media a i {
+	color: #000;
+}
+@media (max-width: 480px) {
+	header .social_media {
+		display: none;
+	}
+}

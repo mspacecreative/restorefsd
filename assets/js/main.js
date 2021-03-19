@@ -13,8 +13,7 @@
 		searchBar = $('.search_container'),
 		modalOverlayDiv = '<div class="modal_overlay"></div>',
 		headerHeight = $('header').outerHeight(),
-		heroSection = $('.hero'),
-		toggle_menu = hamburgerIcon.add(closeButton);
+		heroSection = $('.hero');
 		
 		function addOverlay() {
 			if ($('.show').length) {
@@ -54,6 +53,38 @@
 			});
 			$('html').removeClass('fixed');
 			header.removeClass('is-active');
+		});
+		
+		$('body').on('click', '.boxed', function() {
+			$('body').prepend('<div class="modal"></div>').addClass('modal_open');
+			$('.modal_open').children('.modal').fadeIn();
+			$('html').addClass('fixed');
+			$(this).parent().next().css('display', 'flex').hide().fadeIn();
+			$(this).parent().next().find('.modal_inner').addClass('visible');
+		});
+		
+		/*
+		$('.modal_inner').map(function() {
+			$(this).prepend('<button class="closeModalButton"><span>&nbsp;</span><span>&nbsp;</span></button>');
+		});
+		*/
+		
+		$('body').on('click', '.modal_inner .closeModalButton', function() {
+			$('html').removeClass('fixed');
+			$(this).parent().removeClass('visible');
+			$(this).parent().parent().fadeOut();
+			$('.modal').fadeOut('normal', function() {
+				$(this).remove();
+			});
+		});
+		
+		$('body').on('click', '.modal', function() {
+			$('html').removeClass('fixed');
+			$('.modal_container').fadeOut();
+			$('.modal_inner').removeClass('visible');
+			$(this).fadeOut('normal', function() {
+				$(this).remove();
+			});
 		});
 		
 		// ACCORDION FUNCTIONALITY
@@ -113,6 +144,11 @@
 				$('.modal_overlay').fadeOut('normal', function() {
 					$(this).remove();
 				});
+				$('.modal').fadeOut('normal', function() {
+					$(this).remove();
+				});
+				$('.modal_container').fadeOut();
+				$('.modal_inner').removeClass('visible');
 			}
 		});
 		

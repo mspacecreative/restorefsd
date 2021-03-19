@@ -34,13 +34,21 @@
 					<h1 title="RestoreFSD"><?php include 'assets/img/branding/restoreFSD-logo.php'; ?></h1>
 				</div>
 				
-				<!-- MENU TOGGLE -->
-				<button class="hamburger hamburger--spin" type="button">
-					<span class="hamburger-box">
-						<span class="hamburger-inner"></span>
-					</span>
-				</button>
-				<!-- / MENU TOGGLE -->
+				<div class="social_and_toggle">
+				
+					<!-- SOCIAL MEDIA -->
+					<?php echo do_shortcode('[social_media]'); ?>
+					<!-- / SOCIAL MEDIA -->
+					
+					<!-- MENU TOGGLE -->
+					<button class="hamburger hamburger--spin" type="button">
+						<span class="hamburger-box">
+							<span class="hamburger-inner"></span>
+						</span>
+					</button>
+					<!-- / MENU TOGGLE -->
+					
+				</div>
 				
 			</div>
 		</header>

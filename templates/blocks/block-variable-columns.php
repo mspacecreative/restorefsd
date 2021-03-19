@@ -12,6 +12,7 @@ $roundedcorners = get_field('rounded_corners');
 $centeredheading = get_field('centered_heading');
 $gutters = get_field('gutter_space');
 $icon = get_sub_field('icon');
+$modal = get_field('show_content_in_modal');
 
 if ( $columns == 'two' ):
 
@@ -318,7 +319,21 @@ if ( $blockanchor && $bgcolor == 'dark' ): ?>
 				</div>
 			</div>
 			
-			<?php elseif ( $boxedcontent ): ?>
+			<?php elseif ( $modal && $boxedcontent ): ?>
+			<div class="col col-lg-4 col-md-4 col-sm-6 col-xs-12 bottomMarginMobile">
+				<div class="boxed">
+					<?php 
+					$heading = get_sub_field('heading');
+					if ( $heading ) {
+						echo '<h3 class="gold">' . $heading . '</h3>';
+					}
+					echo '<div class="arrow_container">'; include 'includes/icons/arrow.svg'; echo '</div>'; ?>
+				</div>
+			</div>
+			
+			<?php include 'includes/content-modal.php';
+			
+			elseif ( $boxedcontent ): ?>
 			<div class="col col-lg-4 col-md-4 col-sm-6 col-xs-12 bottomMarginMobile">
 				<div class="boxed">
 					<?php include 'includes/content-stacked.php'; ?>

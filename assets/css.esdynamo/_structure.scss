@@ -3,6 +3,10 @@
 	box-sizing: border-box;
 }
 
+html.fixed {
+	overflow: hidden;
+}
+
 body {
 	-webkit-font-smoothing: antialiased;
 	color: #333;
@@ -69,6 +73,9 @@ header {
 	padding-right: 30px;
 	padding-left: 30px;
 }
+.col {
+	padding-bottom: 1rem;
+}
 
 // BOXED ITEMS
 .boxed {
@@ -94,5 +101,72 @@ header {
 	background-color: $brandLightGrey;
 }
 #contact {
-	background-color: $brandBlue;
+	///background-color: $brandBlue;
+}
+
+#our-nominees .boxed p {
+	display: none;
+}
+#our-nominees .boxed {
+	cursor: pointer;
+}
+#our-nominees .boxed.no_click {
+	cursor: default;
+}
+
+// OVERLAY
+.modal {
+	position: fixed;
+    z-index: 9999999;
+    height: 100%;
+	width: 100%;
+    top: 0;
+    left: 0;
+	display: none;
+	background-color: rgba(0,0,0,.85);
+	cursor: pointer;
+}
+.modal_container {
+	position: fixed;
+	z-index: 999999;
+	top: 50%;
+	display: none;
+	left: 50%;
+	width: 100%;
+	padding: 2em;
+	transform: translate(-50%,-50%);
+}
+.boxed.no_click {
+	pointer-events: none;
+}
+.modal_inner.visible {
+	transition: .25s ease-in-out;
+	transform: translate(0, 0);
+}
+.modal_inner {
+	max-width: 800px;
+	position: relative;
+    padding: 3em;
+    background-color: #fff;
+	transition: .25s ease-in-out;
+	transform: translate(0, -30px);
+	overflow: auto;
+}
+.modal_inner .closeModalButton {
+	top: .75em;
+	right: .75em;
+}
+.modal_inner .closeModalButton span {
+	background-color: #000;
+}
+@media (max-width: 850px) {
+	.modal_container {
+		top: 0;
+		transform: translate(-50%,0);
+		overflow: auto;
+	    height: 100%;
+	}
+	.modal_inner {
+		padding: 2em;
+	}
 }

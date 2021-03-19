@@ -10,6 +10,7 @@
 			<!-- / MENU TOGGLE -->
 			<?php 
 			echo fsd_nav();
+			echo do_shortcode('[social_media]');
 			?>
 		</div>
 	</div>

@@ -16,6 +16,7 @@ header .inner_container {
 header.down {
 	transition: .25s ease-in-out;
 	transform: translate(0,-100%);
+	position: fixed;
 }
 header.up {
 	transition: .25s ease-in-out;
