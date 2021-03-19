@@ -595,6 +595,16 @@ a {
 	text-decoration: none;
 }
 
+a .boxed h3 {
+	color: #333;
+	transition: .25s ease-in-out;
+}
+
+a .boxed:hover h3 {
+	color: #2ba0da;
+	transition: .25s ease-in-out;
+}
+
 p:last-of-type {
 	margin-bottom: 0;
 }
