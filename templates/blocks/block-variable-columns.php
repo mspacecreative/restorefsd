@@ -337,7 +337,7 @@ if ( $blockanchor && $bgcolor == 'dark' ): ?>
 			<div class="col col-lg-4 col-md-4 col-sm-6 col-xs-12 bottomMarginMobile">
 				<div class="boxed">
 					<?php include 'includes/content-stacked.php';
-					echo '<div class="arrow_container">'; include 'includes/icons/arrow.svg'; echo '</div>'; ?> ?>
+					echo '<div class="arrow_container">'; include 'includes/icons/arrow.svg'; echo '</div>'; ?>
 				</div>
 			</div>
 			
