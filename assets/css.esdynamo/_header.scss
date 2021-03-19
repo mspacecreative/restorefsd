@@ -4,6 +4,19 @@ header {
 	position: absolute;
 	top: 0;
 	left: 0;
+	background-color: transparent;
+}
+.logo .st0 {
+	transition: .25s ease-in-out;
+	fill: #fff;
+}
+.white-bg .logo .st0 {
+	transition: .25s ease-in-out;
+	fill: $brandBlue;
+}
+.white-bg {
+	transition: .25s ease-in-out;
+	background-color: #fff;
 }
 header .inner_container {
 	display: flex;

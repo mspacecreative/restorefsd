@@ -128,12 +128,10 @@ header {
 }
 .modal_container {
 	position: fixed;
-	z-index: 999999;
+	z-index: 9999999;
 	top: 50%;
 	display: none;
 	left: 50%;
-	width: 100%;
-	padding: 2em;
 	transform: translate(-50%,-50%);
 }
 .boxed.no_click {
@@ -165,6 +163,8 @@ header {
 		transform: translate(-50%,0);
 		overflow: auto;
 	    height: 100%;
+		width: 100%;
+		padding: 2em;
 	}
 	.modal_inner {
 		padding: 2em;

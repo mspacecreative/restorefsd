@@ -63,6 +63,16 @@
 			$(this).parent().next().find('.modal_inner').addClass('visible');
 		});
 		
+		var $document = $(document);
+		//viewportHeight = $('.splash').height() / 2;
+		$document.scroll(function() {
+			if ($document.scrollTop() >= 50) {
+				$('header').addClass('white-bg');
+			} else {
+				$('header').removeClass('white-bg');
+			}
+		});
+		
 		/*
 		$('.modal_inner').map(function() {
 			$(this).prepend('<button class="closeModalButton"><span>&nbsp;</span><span>&nbsp;</span></button>');
