@@ -31,7 +31,9 @@
 		<header>
 			<div class="inner_container">
 				<div class="logo">
-					<h1 title="RestoreFSD"><?php include 'assets/img/branding/restoreFSD-logo.php'; ?></h1>
+					<a href="<?php echo home_url(); ?>">
+						<h1 title="RestoreFSD"><?php include 'assets/img/branding/restoreFSD-logo.php'; ?></h1>
+					</a>
 				</div>
 				
 				<div class="social_and_toggle">
