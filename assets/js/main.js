@@ -55,7 +55,7 @@
 			header.removeClass('is-active');
 		});
 		
-		$('body').on('click', '.boxed', function() {
+		$('body').on('click', '#our-nominees .boxed', function() {
 			$('body').prepend('<div class="modal"></div>').addClass('modal_open');
 			$('.modal_open').children('.modal').fadeIn();
 			$('html').addClass('fixed');
