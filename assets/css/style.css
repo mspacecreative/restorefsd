@@ -438,7 +438,7 @@ header {
 	transition: .25s ease-in-out;
 }
 
-.boxed h3:hover ~ .arrow_container {
+.boxed:hover ~ .arrow_container {
 	transition: .25s ease-in-out;
 	transform: translate(10px, 0);
 }
@@ -628,6 +628,15 @@ p:last-of-type {
 	width: 25px;
 	height: 25px;
 	font-size: 15px;
+}
+
+.boxed:hover h3 {
+	color: #2ba0da;
+	transition: .25s ease-in-out;
+}
+
+.boxed h3 {
+	transition: .25s ease-in-out;
 }
 
 h3 a {

@@ -92,6 +92,13 @@ p:last-of-type {
 	height: 25px;
 	font-size: 15px;
 }
+.boxed:hover h3 {
+	color: $brandBlue;
+	transition: .25s ease-in-out;
+}
+.boxed h3 {
+	transition: .25s ease-in-out;
+}
 h3 a {
 	font-size: 20px;
 	color: #333;

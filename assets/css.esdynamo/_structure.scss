@@ -92,7 +92,7 @@ header {
     height: 20px;
 	transition: .25s ease-in-out;
 }
-.boxed h3:hover ~ .arrow_container {
+.boxed:hover ~ .arrow_container {
 	transition: .25s ease-in-out;
 	transform: translate(10px, 0);
 }
