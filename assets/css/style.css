@@ -642,6 +642,12 @@ p:last-of-type {
 	color: #000;
 }
 
+@media (max-width: 48em) {
+	.bottomMarginMobile {
+		margin-bottom: 30px;
+	}
+}
+
 @media (max-width: 480px) {
 	header .social_media {
 		display: none;
