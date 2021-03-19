@@ -92,6 +92,15 @@ p:last-of-type {
 	height: 25px;
 	font-size: 15px;
 }
+h3 a {
+	font-size: 20px;
+	color: #333;
+	transition: .25s ease-in-out;
+}
+h3 a:hover {
+	color: $brandBlue;
+	transition: .25s ease-in-out;
+}
 .footer_logo {
 	max-width: 160px;
 }
