@@ -438,7 +438,7 @@ header {
 	transition: .25s ease-in-out;
 }
 
-.boxed:hover ~ .arrow_container {
+.boxed:hover > .arrow_container {
 	transition: .25s ease-in-out;
 	transform: translate(10px, 0);
 }
