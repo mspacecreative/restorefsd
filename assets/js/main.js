@@ -73,7 +73,9 @@
 			}
 		});
 		
-		$('.modal-content').click(false);
+		$('.modal-content').click(function(e) {
+			e.stopPropagation();
+		});
 		
 		$('body').on('click', '.modal_inner .closeModalButton', function() {
 			$('html').removeClass('fixed');
