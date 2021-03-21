@@ -59,8 +59,8 @@
 			$('body').prepend('<div class="modal"></div>').addClass('modal_open');
 			$('.modal_open').children('.modal').fadeIn();
 			$('html').addClass('fixed');
-			$(this).parent().next().css('display', 'flex').hide().fadeIn();
-			$(this).parent().next().find('.modal_inner').addClass('visible');
+			$(this).parent().next().fadeIn();
+			$(this).parent().next('.modal_container').find('.modal_inner').addClass('visible');
 		});
 		
 		var $document = $(document);
@@ -73,26 +73,22 @@
 			}
 		});
 		
-		/*
-		$('.modal_inner').map(function() {
-			$(this).prepend('<button class="closeModalButton"><span>&nbsp;</span><span>&nbsp;</span></button>');
-		});
-		*/
+		$('.modal-content').click(false);
 		
 		$('body').on('click', '.modal_inner .closeModalButton', function() {
 			$('html').removeClass('fixed');
 			$(this).parent().removeClass('visible');
-			$(this).parent().parent().fadeOut();
+			$(this).parent().parent().parent().parent().fadeOut();
 			$('.modal').fadeOut('normal', function() {
 				$(this).remove();
 			});
 		});
 		
-		$('body').on('click', '.modal', function() {
+		$('body').on('click', '.modal_container', function() {
 			$('html').removeClass('fixed');
-			$('.modal_container').fadeOut();
+			$(this).fadeOut();
 			$('.modal_inner').removeClass('visible');
-			$(this).fadeOut('normal', function() {
+			$('.modal').fadeOut('normal', function() {
 				$(this).remove();
 			});
 		});

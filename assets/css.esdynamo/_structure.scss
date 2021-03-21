@@ -122,23 +122,37 @@ header {
 .modal {
 	position: fixed;
     z-index: 9999999;
-    height: 100%;
-	width: 100%;
     top: 0;
     left: 0;
+	bottom: 0;
+	right: 0;
 	display: none;
 	background-color: rgba(0,0,0,.85);
 	cursor: pointer;
+	-webkit-overflow-scrolling: touch;
 }
 .modal_container {
 	position: fixed;
-	z-index: 9999999;
-	top: 50%;
+	z-index: 99999999;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
 	display: none;
-	left: 50%;
-	transform: translate(-50%,-50%);
+	overflow: auto;
 }
-.boxed.no_click {
+.modal_table {
+	display: table;
+    height: 100%;
+    width: 100%;
+    pointer-events: none;
+}
+.modal_table_cell {
+	margin: 0px auto;
+    max-width: 600px;
+    vertical-align: middle;
+    display: table-cell;
+	padding: 2em;
 	pointer-events: none;
 }
 .modal_inner.visible {
@@ -146,13 +160,19 @@ header {
 	transform: translate(0, 0);
 }
 .modal_inner {
-	max-width: 800px;
-	position: relative;
-    padding: 3em;
+	width: inherit;
+    max-width: inherit;
+    height: inherit;
+    margin: 0 auto;
+    pointer-events: all;
+    //padding: 3em;
     background-color: #fff;
+    position: relative;
 	transition: .25s ease-in-out;
 	transform: translate(0, -30px);
-	overflow: auto;
+}
+.modal-content {
+	padding: 3em;
 }
 .modal_inner .closeModalButton {
 	top: .75em;
@@ -162,15 +182,21 @@ header {
 	background-color: #000;
 }
 @media (max-width: 850px) {
-	.modal_container {
-		top: 0;
-		transform: translate(-50%,0);
-		overflow: auto;
-	    height: 100%;
-		width: 100%;
+	.modal-content {
 		padding: 2em;
 	}
-	.modal_inner {
-		padding: 2em;
+}
+@media (max-width: 48em) {
+	.col:nth-child(1n+1):nth-last-child(-n+1),
+	.col:nth-child(1n+1):nth-last-child(-n+1) ~ .col,
+	.col:nth-child(2n+1):nth-last-child(-n+2),
+	.col:nth-child(2n+1):nth-last-child(-n+2) ~ .col {
+	    padding-bottom: 0;
+	}
+}
+@media (min-width: 64em) {
+	.col:nth-child(3n+1):nth-last-child(-n+3),
+	.col:nth-child(3n+1):nth-last-child(-n+3) ~ .col {
+	    padding-bottom: 0;
 	}
 }

@@ -5,148 +5,32 @@ $blockanchor = get_field('block_anchor');
 $bgimgoverlay = get_field('background_image_overlay');
 $width = get_field('content_width');
 	
-if ( $bgimg ):
+switch ( $bgimgoverlay ) {
+	case 'dark':
+		$tint = 'dark-overlay light';
+		break;
+	case 'light':
+		$tint = 'light-overlay';
+		break;
+	default:
+		$tint = '';
+}
 
-	if ( $blockanchor && $bgimgoverlay == 'dark' ): ?>
-	<div id="<?php echo $blockanchor ?>" class="bg-img-cover dark-overlay content-section" style="background-image: url(<?php echo $bgimg ?>);">
-		<?php if ( $width ) : ?>
-		<div class="bullet-points inner_container maxWidth850">
-		<?php else : ?>
-		<div class="bullet-points inner_container">
-		<?php endif;
-			include('includes/section-content-loop.php'); ?>
-		</div>
-	</div>
-	
-	<?php elseif ( $blockanchor && $bgimgoverlay == 'light' ): ?>
-	<div id="<?php echo $blockanchor ?>" class="bg-img-cover light-overlay content-section" style="background-image: url(<?php echo $bgimg ?>);">
-		<?php if ( $width ) : ?>
-		<div class="bullet-points inner_container maxWidth850">
-		<?php else : ?>
-		<div class="bullet-points inner_container">
-		<?php endif;
-			include('includes/section-content-loop.php'); ?>
-		</div>
-	</div>
-	
-	<?php elseif ( $bgimgoverlay == 'dark' ): ?>
-	<div class="bg-img-cover dark-overlay content-section" style="background-image: url(<?php echo $bgimg ?>);">
-		<?php if ( $width ) : ?>
-		<div class="bullet-points inner_container maxWidth850">
-		<?php else : ?>
-		<div class="bullet-points inner_container">
-		<?php endif;
-			include('includes/section-content-loop.php'); ?>
-		</div>
-	</div>
-	
-	<?php elseif ( $bgimgoverlay == 'light' ): ?>
-	<div class="bg-img-cover light-overlay content-section" style="background-image: url(<?php echo $bgimg ?>);">
-		<?php if ( $width ) : ?>
-		<div class="bullet-points inner_container maxWidth850">
-		<?php else : ?>
-		<div class="bullet-points inner_container">
-		<?php endif;
-			include('includes/section-content-loop.php'); ?>
-		</div>
-	</div>
-	
-	<?php elseif ( $blockanchor ): ?>
-	<div id="<?php echo $blockanchor ?>" class="bg-img-cover dark-overlay content-section" style="background-image: url(<?php echo $bgimg ?>);">
-		<?php if ( $width ) : ?>
-		<div class="bullet-points inner_container maxWidth850">
-		<?php else : ?>
-		<div class="bullet-points inner_container">
-		<?php endif;
-			include('includes/section-content-loop.php'); ?>
-		</div>
-	</div>
-	
-	<?php else : ?>
-	<div class="bg-img-cover content-section" style="background-image: url(<?php echo $bgimg ?>);">
-		<?php if ( $width ) : ?>
-		<div class="bullet-points inner_container maxWidth850">
-		<?php else : ?>
-		<div class="bullet-points inner_container">
-		<?php endif;
-			include('includes/section-content-loop.php'); ?>
-		</div>
-	</div>
-	<?php endif;
-	
-elseif ( $bgcolor == 'light' ):
-	
-	if ( $blockanchor ) : ?>
-	<div id="<?php echo $blockanchor ?>" class="lightbg content-section">
-		<?php if ( $width ) : ?>
-		<div class="bullet-points inner_container maxWidth850">
-		<?php else : ?>
-		<div class="bullet-points inner_container">
-		<?php endif;
-			include('includes/section-content-loop.php'); ?>
-		</div>
-	</div>
-	
-	<?php else : ?>
-	<div class="lightbg content-section">
-		<?php if ( $width ) : ?>
-		<div class="bullet-points inner_container maxWidth850">
-		<?php else : ?>
-		<div class="bullet-points inner_container">
-		<?php endif;
-			include('includes/section-content-loop.php'); ?>
-		</div>
-	</div>
-	<?php endif;
-	
-elseif ( $bgcolor == 'dark' ):
-	
-	if ( $blockanchor ) : ?>
-	<div id="<?php echo $blockanchor ?>" class="darkGreyBg content-section light">
-		<?php if ( $width ) : ?>
-		<div class="bullet-points inner_container maxWidth850">
-		<?php else : ?>
-		<div class="bullet-points inner_container">
-		<?php endif;
-			include('includes/section-content-loop.php'); ?>
-		</div>
-	</div>
-	
-	<?php else : ?>
-	<div class="darkGreyBg content-section light">
-		<?php if ( $width ) : ?>
-		<div class="bullet-points inner_container maxWidth850">
-		<?php else : ?>
-		<div class="bullet-points inner_container">
-		<?php endif;
-			include('includes/section-content-loop.php'); ?>
-		</div>
-	</div>
-	<?php endif;
-	
-else : 
-	
-	if ( $blockanchor ) : ?>
-	<div id="<?php echo $blockanchor ?>" class="lightbg content-section">
-		<?php if ( $width ) : ?>
-		<div class="bullet-points inner_container maxWidth850">
-		<?php else : ?>
-		<div class="bullet-points inner_container">
-		<?php endif;
-			include('includes/section-content-loop.php'); ?>
-		</div>
-	</div>
-	
-	<?php else : ?>
-	<div class="lightbg content-section">
-		<?php if ( $width ) : ?>
-		<div class="bullet-points inner_container maxWidth850">
-		<?php else : ?>
-		<div class="bullet-points inner_container">
-		<?php endif;
-			include('includes/section-content-loop.php'); ?>
-		</div>
-	</div>
-	<?php endif;
+switch ( $bgcolor ) {
+	case 'dark':
+		$bg = 'darkGreyBg light';
+		break;
+	case 'light':
+		$bg = 'lightbg';
+		break;
+	default:
+		$bg = '';
+} ?>
 
-endif; ?>
+<div<?php if ( $blockanchor ): echo ' id="'; echo $blockanchor; echo '" '; endif; ?>class="<?php if ( $bg ): echo $bg; echo ' '; endif; if ( $bgimg ): echo 'bg-img-cover'; endif; if ( $tint ): echo ' '; echo $tint; echo ' '; endif; ?>content-section"<?php if ( $bgimg ): echo ' style="background-image: url('; echo $bgimg; echo ');'; endif; ?>">
+	
+	<div class="bullet-points inner_container<?php if ( $width ): echo ' maxWidth850'; endif; ?>">
+		<?php include('includes/section-content-loop.php'); ?>
+	</div>
+	
+</div>

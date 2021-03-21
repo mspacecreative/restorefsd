@@ -40,6 +40,7 @@ h1,h2,h3,h4,h5,h6 {
 ul {
 	padding: 0 0 0 20px;
 	list-style: none;
+	margin-bottom: 0;
 }
 li {
 	margin-bottom: .5em;
@@ -129,9 +130,20 @@ h3 a:hover {
 	.bottomMarginMobile {
 		margin-bottom: 30px;
 	}
+	#contact .social_media {
+		margin-bottom: 30px;
+	}
+}
+@media (max-width: 850px) and (orientation: landscape) {
+	.col ~ .col ul {
+		margin-top: 0;
+	}
 }
 @media (max-width: 480px) {
 	header .social_media {
 		display: none;
+	}
+	.col ~ .col ul {
+		margin-top: 0;
 	}
 }

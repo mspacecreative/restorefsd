@@ -50,7 +50,7 @@ switch ( $aligncolumns ) {
 		$position = 'middle-lg middle-md';
 		break;
 	case 'bottom':
-		$position = 'bottom-lg bottom-md';
+		$position = 'bottom-lg bottom-md bottom-sm';
 		break;
 	default:
 		$position = '';
@@ -172,15 +172,15 @@ elseif ( $bgtype === 'image' && $bgimg ): ?>
 				}
 		 		
 		 		if ( $offsetlayout ): ?>
-				<div class="col-lg-6 bottomMarginMobile col-md-6 col-sm-6 col-xs-12 col offsetContentContainer">
+				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 col offsetContentContainer">
 				<?php elseif ( $anchor && $mobile ): ?>
-				<div id="<?php echo $anchor ?>" class="<?php echo $colwidth ?> col-lg-6 bottomMarginMobile keepSpacing col-md-6 col-sm-6 col-xs-12 col offsetContentContainer">
+				<div id="<?php echo $anchor ?>" class="<?php echo $colwidth ?> col-lg-6 keepSpacing col-md-6 col-sm-6 col-xs-12 col offsetContentContainer">
 				<?php elseif ( $anchor ): ?>
-				<div id="<?php echo $anchor ?>" class="<?php echo $colwidth ?> col-lg-6 bottomMarginMobile col-md-6 col-sm-6 col-xs-12 col offsetContentContainer">
+				<div id="<?php echo $anchor ?>" class="<?php echo $colwidth ?> col-lg-6 col-md-6 col-sm-6 col-xs-12 col offsetContentContainer">
 				<?php elseif ( $mobile ): ?>
-				<div class="<?php echo $colwidth ?> col-lg-6 bottomMarginMobile keepSpacing col-md-6 col-sm-6 col-xs-12 col offsetContentContainer">
+				<div class="<?php echo $colwidth ?> col-lg-6 keepSpacing col-md-6 col-sm-6 col-xs-12 col offsetContentContainer">
 				<?php else : ?>
-				<div class="<?php echo $colwidth ?> col-md-6 col-sm-6 col-xs-12 col bottomMarginMobile offsetContentContainer">
+				<div class="<?php echo $colwidth ?> col-md-6 col-sm-6 col-xs-12 col offsetContentContainer">
 				<?php endif;
 				
 					if ( $contenttype == 'carousel' ): ?>
@@ -316,15 +316,15 @@ elseif ( $bgtype === 'image' && $bgimg ): ?>
 				}
 				
 				if ( $offsetlayout ): ?>
-				<div class="col-lg-6 bottomMarginMobile col-md-6 col-sm-6 col-xs-12 col offsetContentContainer">
+				<div class="col-lg-6 col-md-6 col-sm-6 col-xs-12 col offsetContentContainer">
 				<?php elseif ( $anchor && $mobile ): ?>
-				<div id="<?php echo $anchor ?>" class="<?php echo $colwidth ?> col-lg-6 bottomMarginMobile keepSpacing col-md-6 col-sm-6 col-xs-12 col offsetContentContainer">
+				<div id="<?php echo $anchor ?>" class="<?php echo $colwidth ?> col-lg-6 keepSpacing col-md-6 col-sm-6 col-xs-12 col offsetContentContainer">
 				<?php elseif ( $anchor ): ?>
-				<div id="<?php echo $anchor ?>" class="<?php echo $colwidth ?> col-lg-6 bottomMarginMobile col-md-6 col-sm-6 col-xs-12 col offsetContentContainer">
+				<div id="<?php echo $anchor ?>" class="<?php echo $colwidth ?> col-lg-6 col-md-6 col-sm-6 col-xs-12 col offsetContentContainer">
 				<?php elseif ( $mobile ): ?>
-				<div class="<?php echo $colwidth ?> col-lg-6 bottomMarginMobile keepSpacing col-md-6 col-sm-6 col-xs-12 col offsetContentContainer">
+				<div class="<?php echo $colwidth ?> col-lg-6 keepSpacing col-md-6 col-sm-6 col-xs-12 col offsetContentContainer">
 				<?php else : ?>
-				<div class="<?php echo $colwidth ?> col-md-6 col-sm-6 col-xs-12 col bottomMarginMobile offsetContentContainer">
+				<div class="<?php echo $colwidth ?> col-md-6 col-sm-6 col-xs-12 col offsetContentContainer">
 				<?php endif;
 				
 					if ( $contenttype == 'carousel' ): ?>

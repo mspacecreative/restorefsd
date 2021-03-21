@@ -97,35 +97,35 @@ if ( $blockanchor && $bgcolor == 'dark' ): ?>
 			if ( $inlinelinks ):
 			
 			if ( $boxedcontent && $roundedcorners && $bgcolor == 'dark' ): ?>
-			<div class="col col-lg-6 col-md-6 col-sm-6 col-xs-12 bottomMarginMobile">
+			<div class="col col-lg-6 col-md-6 col-sm-6 col-xs-12">
 				<div class="boxed light dark roundedCorners">
 					<?php include 'includes/content-inline.php'; ?>
 				</div>
 			</div>
 			
 			<?php elseif ( $boxedcontent && $roundedcorners && $bgcolor == 'light' ): ?>
-			<div class="col col-lg-6 col-md-6 col-sm-6 col-xs-12 bottomMarginMobile">
+			<div class="col col-lg-6 col-md-6 col-sm-6 col-xs-12">
 				<div class="boxed roundedCorners">
 					<?php include 'includes/content-inline.php'; ?>
 				</div>
 			</div>
 			
 			<?php elseif ( $boxedcontent && $roundedcorners ): ?>
-			<div class="col col-lg-6 col-md-6 col-sm-6 col-xs-12 bottomMarginMobile">
+			<div class="col col-lg-6 col-md-6 col-sm-6 col-xs-12">
 				<div class="boxed roundedCorners">
 					<?php include 'includes/content-inline.php'; ?>
 				</div>
 			</div>
 			
 			<?php elseif ( $boxedcontent ): ?>
-			<div class="col col-lg-6 col-md-6 col-sm-6 col-xs-12 bottomMarginMobile">
+			<div class="col col-lg-6 col-md-6 col-sm-6 col-xs-12">
 				<div class="boxed">
 					<?php include 'includes/content-inline.php'; ?>
 				</div>
 			</div>
 			
 			<?php else : ?>
-			<div class="col col-lg-6 col-md-6 col-sm-6 col-xs-12 bottomMarginMobile">
+			<div class="col col-lg-6 col-md-6 col-sm-6 col-xs-12">
 				<?php include 'includes/content-inline.php'; ?>
 			</div>
 			<?php endif;
@@ -133,28 +133,28 @@ if ( $blockanchor && $bgcolor == 'dark' ): ?>
 			else :
 			
 			if ( $boxedcontent && $roundedcorners && $bgcolor == 'dark' ): ?>
-			<div class="col col-lg-6 col-md-6 col-sm-6 col-xs-12 bottomMarginMobile">
+			<div class="col col-lg-6 col-md-6 col-sm-6 col-xs-12">
 				<div class="boxed light dark roundedCorners">
 					<?php include 'includes/content-stacked.php'; ?>
 				</div>
 			</div>
 			
 			<?php elseif ( $boxedcontent && $roundedcorners && $bgcolor == 'light' ): ?>
-			<div class="col col-lg-6 col-md-6 col-sm-6 col-xs-12 bottomMarginMobile">
+			<div class="col col-lg-6 col-md-6 col-sm-6 col-xs-12">
 				<div class="boxed roundedCorners">
 					<?php include 'includes/content-stacked.php'; ?>
 				</div>
 			</div>
 			
 			<?php elseif ( $boxedcontent && $roundedcorners ): ?>
-			<div class="col col-lg-6 col-md-6 col-sm-6 col-xs-12 bottomMarginMobile">
+			<div class="col col-lg-6 col-md-6 col-sm-6 col-xs-12">
 				<div class="boxed roundedCorners">
 					<?php include 'includes/content-stacked.php'; ?>
 				</div>
 			</div>
 			
 			<?php elseif ( $boxedcontent ): ?>
-			<div class="col col-lg-6 col-md-6 col-sm-6 col-xs-12 bottomMarginMobile">
+			<div class="col col-lg-6 col-md-6 col-sm-6 col-xs-12">
 				<div class="boxed">
 					<?php 
 					include 'includes/content-stacked.php';
@@ -163,7 +163,7 @@ if ( $blockanchor && $bgcolor == 'dark' ): ?>
 			</div>
 			
 			<?php else : ?>
-			<div class="col col-lg-6 col-md-6 col-sm-6 col-xs-12 bottomMarginMobile">
+			<div class="col col-lg-6 col-md-6 col-sm-6 col-xs-12">
 				<?php include 'includes/content-stacked.php'; ?>
 			</div>
 			<?php endif;
@@ -263,35 +263,35 @@ if ( $blockanchor && $bgcolor == 'dark' ): ?>
 			if ( $inlinelinks ):
 			
 			if ( $boxedcontent && $roundedcorners && $bgcolor == 'dark' ): ?>
-			<div class="col col-lg-4 col-md-4 col-sm-6 col-xs-12 bottomMarginMobile">
+			<div class="col col-lg-4 col-md-4 col-sm-6 col-xs-12">
 				<div class="boxed light dark roundedCorners">
 					<?php include 'includes/content-inline.php'; ?>
 				</div>
 			</div>
 			
 			<?php elseif ( $boxedcontent && $roundedcorners && $bgcolor == 'light' ): ?>
-			<div class="col col-lg-4 col-md-4 col-sm-6 col-xs-12 bottomMarginMobile">
+			<div class="col col-lg-4 col-md-4 col-sm-6 col-xs-12">
 				<div class="boxed roundedCorners">
 					<?php include 'includes/content-inline.php'; ?>
 				</div>
 			</div>
 			
 			<?php elseif ( $boxedcontent && $roundedcorners ): ?>
-			<div class="col col-lg-4 col-md-4 col-sm-6 col-xs-12 bottomMarginMobile">
+			<div class="col col-lg-4 col-md-4 col-sm-6 col-xs-12">
 				<div class="boxed roundedCorners">
 					<?php include 'includes/content-inline.php'; ?>
 				</div>
 			</div>
 			
 			<?php elseif ( $boxedcontent ): ?>
-			<div class="col col-lg-4 col-md-4 col-sm-6 col-xs-12 bottomMarginMobile">
+			<div class="col col-lg-4 col-md-4 col-sm-6 col-xs-12">
 				<div class="boxed">
 					<?php include 'includes/content-inline.php'; ?>
 				</div>
 			</div>
 			
 			<?php else : ?>
-			<div class="col col-lg-4 col-md-4 col-sm-6 col-xs-12 bottomMarginMobile">
+			<div class="col col-lg-4 col-md-4 col-sm-6 col-xs-12">
 				<?php include 'includes/content-inline.php'; ?>
 			</div>
 			<?php endif;
@@ -299,28 +299,28 @@ if ( $blockanchor && $bgcolor == 'dark' ): ?>
 			else :
 			
 			if ( $boxedcontent && $roundedcorners && $bgcolor == 'dark' ): ?>
-			<div class="col col-lg-4 col-md-4 col-sm-6 col-xs-12 bottomMarginMobile">
+			<div class="col col-lg-4 col-md-4 col-sm-6 col-xs-12">
 				<div class="boxed light dark roundedCorners">
 					<?php include 'includes/content-stacked.php'; ?>
 				</div>
 			</div>
 			
 			<?php elseif ( $boxedcontent && $roundedcorners && $bgcolor == 'light' ): ?>
-			<div class="col col-lg-4 col-md-4 col-sm-6 col-xs-12 bottomMarginMobile">
+			<div class="col col-lg-4 col-md-4 col-sm-6 col-xs-12">
 				<div class="boxed roundedCorners">
 					<?php include 'includes/content-stacked.php'; ?>
 				</div>
 			</div>
 			
 			<?php elseif ( $boxedcontent && $roundedcorners ): ?>
-			<div class="col col-lg-4 col-md-4 col-sm-6 col-xs-12 bottomMarginMobile">
+			<div class="col col-lg-4 col-md-4 col-sm-6 col-xs-12">
 				<div class="boxed roundedCorners">
 					<?php include 'includes/content-stacked.php'; ?>
 				</div>
 			</div>
 			
 			<?php elseif ( $modal && $boxedcontent ): ?>
-			<div class="col col-lg-4 col-md-4 col-sm-6 col-xs-12 bottomMarginMobile">
+			<div class="col col-lg-4 col-md-4 col-sm-6 col-xs-12">
 				<div class="boxed">
 					<?php 
 					$heading = get_sub_field('heading');
@@ -334,7 +334,7 @@ if ( $blockanchor && $bgcolor == 'dark' ): ?>
 			<?php include 'includes/content-modal.php';
 			
 			elseif ( $boxedcontent ): ?>
-			<div class="col col-lg-4 col-md-4 col-sm-6 col-xs-12 bottomMarginMobile">
+			<div class="col col-lg-4 col-md-4 col-sm-6 col-xs-12">
 				<?php
 				$link = get_sub_field('link');
 				if ( $link ): ?>
@@ -353,7 +353,7 @@ if ( $blockanchor && $bgcolor == 'dark' ): ?>
 			</div>
 			
 			<?php else : ?>
-			<div class="col col-lg-4 col-md-4 col-sm-6 col-xs-12 bottomMarginMobile">
+			<div class="col col-lg-4 col-md-4 col-sm-6 col-xs-12">
 				<?php include 'includes/content-stacked.php'; ?>
 			</div>
 			<?php endif;
@@ -453,35 +453,35 @@ if ( $blockanchor && $bgcolor == 'dark' ): ?>
 			if ( $inlinelinks ):
 			
 			if ( $boxedcontent && $roundedcorners && $bgcolor == 'dark' ): ?>
-			<div class="col col-lg-3 col-md-3 col-sm-6 col-xs-12 bottomMarginMobile">
+			<div class="col col-lg-3 col-md-3 col-sm-6 col-xs-12">
 				<div class="boxed light dark roundedCorners">
 					<?php include 'includes/content-inline.php'; ?>
 				</div>
 			</div>
 			
 			<?php elseif ( $boxedcontent && $roundedcorners && $bgcolor == 'light' ): ?>
-			<div class="col col-lg-3 col-md-3 col-sm-6 col-xs-12 bottomMarginMobile">
+			<div class="col col-lg-3 col-md-3 col-sm-6 col-xs-12">
 				<div class="boxed roundedCorners">
 					<?php include 'includes/content-inline.php'; ?>
 				</div>
 			</div>
 			
 			<?php elseif ( $boxedcontent && $roundedcorners ): ?>
-			<div class="col col-lg-3 col-md-3 col-sm-6 col-xs-12 bottomMarginMobile">
+			<div class="col col-lg-3 col-md-3 col-sm-6 col-xs-12">
 				<div class="boxed roundedCorners">
 					<?php include 'includes/content-inline.php'; ?>
 				</div>
 			</div>
 			
 			<?php elseif ( $boxedcontent ): ?>
-			<div class="col col-lg-3 col-md-3 col-sm-6 col-xs-12 bottomMarginMobile">
+			<div class="col col-lg-3 col-md-3 col-sm-6 col-xs-12">
 				<div class="boxed">
 					<?php include 'includes/content-inline.php'; ?>
 				</div>
 			</div>
 			
 			<?php else : ?>
-			<div class="col col-lg-3 col-md-3 col-sm-6 col-xs-12 bottomMarginMobile">
+			<div class="col col-lg-3 col-md-3 col-sm-6 col-xs-12">
 				<?php include 'includes/content-inline.php'; ?>
 			</div>
 			<?php endif;
@@ -489,35 +489,35 @@ if ( $blockanchor && $bgcolor == 'dark' ): ?>
 			else :
 			
 			if ( $boxedcontent && $roundedcorners && $bgcolor == 'dark' ): ?>
-			<div class="col col-lg-3 col-md-3 col-sm-6 col-xs-12 bottomMarginMobile">
+			<div class="col col-lg-3 col-md-3 col-sm-6 col-xs-12">
 				<div class="boxed light dark roundedCorners">
 					<?php include 'includes/content-stacked.php'; ?>
 				</div>
 			</div>
 			
 			<?php elseif ( $boxedcontent && $roundedcorners && $bgcolor == 'light' ): ?>
-			<div class="col col-lg-3 col-md-3 col-sm-6 col-xs-12 bottomMarginMobile">
+			<div class="col col-lg-3 col-md-3 col-sm-6 col-xs-12">
 				<div class="boxed roundedCorners">
 					<?php include 'includes/content-stacked.php'; ?>
 				</div>
 			</div>
 			
 			<?php elseif ( $boxedcontent && $roundedcorners ): ?>
-			<div class="col col-lg-3 col-md-3 col-sm-6 col-xs-12 bottomMarginMobile">
+			<div class="col col-lg-3 col-md-3 col-sm-6 col-xs-12">
 				<div class="boxed roundedCorners">
 					<?php include 'includes/content-stacked.php'; ?>
 				</div>
 			</div>
 			
 			<?php elseif ( $boxedcontent ): ?>
-			<div class="col col-lg-3 col-md-3 col-sm-6 col-xs-12 bottomMarginMobile">
+			<div class="col col-lg-3 col-md-3 col-sm-6 col-xs-12">
 				<div class="boxed">
 					<?php include 'includes/content-stacked.php'; ?>
 				</div>
 			</div>
 			
 			<?php else : ?>
-			<div class="col col-lg-3 col-md-3 col-sm-6 col-xs-12 bottomMarginMobile">
+			<div class="col col-lg-3 col-md-3 col-sm-6 col-xs-12">
 				<?php include 'includes/content-stacked.php'; ?>
 			</div>
 			<?php endif;
