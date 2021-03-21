@@ -1,10 +1,10 @@
 <!-- hero -->
 <section class="hero section light">
 	<div class="inner_container section">
-		<h2>&ldquo;Time to put the company back on track&rdquo;
+		<h2>&ldquo;Let’s put FSD back on the path to success&rdquo;
 </h2>
 		
-		<p>Anthony Durkacz, Founder and Director of FSD Pharma</p>
+		<p>Anthony Durkacz, Founder and Shareholder</p>
 	</div>
 </section>
 <!-- / hero -->
