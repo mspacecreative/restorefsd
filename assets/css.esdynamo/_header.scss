@@ -36,3 +36,9 @@ header.up {
 	transform: translate(0,0);
 	position: fixed;
 }
+
+@media (max-width: 480px) {
+	header .social_media {
+		display: none;
+	}
+}

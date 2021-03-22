@@ -2111,6 +2111,12 @@ header.up {
 	position: fixed;
 }
 
+@media (max-width: 480px) {
+	header .social_media {
+		display: none;
+	}
+}
+
 .wpcf7 {
 	margin-top: 4em;
 }
