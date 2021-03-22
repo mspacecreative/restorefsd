@@ -11,6 +11,9 @@ function fsd_styles() {
 	wp_register_script('bootstrapjs', get_template_directory_uri() . '/assets/js/vendor/bootstrap-3.1.1.min.js', array('jquery'), null );
 	wp_enqueue_script('bootstrapjs');
 	
+	wp_register_style( 'google-font', 'https://fonts.googleapis.com/css2?family=Almarai:wght@400;700&display=swap', array(), null );
+	wp_enqueue_style( 'google-font' );
+	
 	wp_register_style( 'fontawesome', 'https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css', array(), null );
 	wp_enqueue_style( 'fontawesome' );
     
