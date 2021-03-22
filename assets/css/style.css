@@ -2157,6 +2157,11 @@ header.up {
 	animation-fill-mode: forwards;
 }
 
+img {
+	max-width: 100%;
+	height: auto;
+}
+
 @keyframes move {
 100% {
 	stroke-dashoffset: 0;
