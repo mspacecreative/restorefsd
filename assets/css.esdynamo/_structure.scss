@@ -130,6 +130,7 @@ header {
 	background-color: rgba(0,0,0,.85);
 	cursor: pointer;
 	-webkit-overflow-scrolling: touch;
+	outline: none;
 }
 .modal_container {
 	position: fixed;
@@ -140,12 +141,14 @@ header {
 	right: 0;
 	display: none;
 	overflow: auto;
+	outline: none;
 }
 .modal_table {
 	display: table;
     height: 100%;
     width: 100%;
     pointer-events: none;
+	outline: none;
 }
 .modal_table_cell {
 	margin: 0px auto;
@@ -154,6 +157,7 @@ header {
     display: table-cell;
 	padding: 2em;
 	pointer-events: none;
+	outline: none;
 }
 .modal_inner.visible {
 	transition: .25s ease-in-out;

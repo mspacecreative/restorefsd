@@ -474,6 +474,7 @@ header {
 	background-color: rgba(0, 0, 0, 0.85);
 	cursor: pointer;
 	-webkit-overflow-scrolling: touch;
+	outline: none;
 }
 
 .modal_container {
@@ -485,6 +486,7 @@ header {
 	right: 0;
 	display: none;
 	overflow: auto;
+	outline: none;
 }
 
 .modal_table {
@@ -492,6 +494,7 @@ header {
 	height: 100%;
 	width: 100%;
 	pointer-events: none;
+	outline: none;
 }
 
 .modal_table_cell {
@@ -501,6 +504,7 @@ header {
 	display: table-cell;
 	padding: 2em;
 	pointer-events: none;
+	outline: none;
 }
 
 .modal_inner.visible {
