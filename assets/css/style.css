@@ -604,6 +604,7 @@ header {
 
 h2 {
 	font-size: 28px;
+	font-weight: 600;
 }
 
 h3 {
@@ -740,13 +741,9 @@ h3 a:hover {
 	}
 }
 
-@media (max-width: 480px) {
-	header .social_media {
-		display: none;
-	}
-	
-	.col ~ .col ul {
-		margin-top: 0;
+@media (max-device-width: 1366px) {
+	h2 {
+		letter-spacing: -.02em;
 	}
 }
 
