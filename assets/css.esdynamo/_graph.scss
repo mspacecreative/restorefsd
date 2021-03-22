@@ -16,3 +16,10 @@ img {
         stroke-dashoffset: 0;
     }
 }
+
+@media (max-width: 48em) {
+	#back-to-success .col {
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+}
