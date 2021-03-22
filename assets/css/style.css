@@ -741,6 +741,12 @@ h3 a:hover {
 	}
 }
 
+@media (max-width: 480px) {
+	.col ~ .col ul {
+		margin-top: 0;
+	}
+}
+
 @media (max-device-width: 1366px) {
 	h2 {
 		letter-spacing: -.05em;
