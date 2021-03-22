@@ -7,7 +7,8 @@
 		<h2>&ldquo;Let’s put FSD back on the path to success&rdquo;
 </h2>
 		
-		<p>Anthony Durkacz, Founder and Shareholder</p>
+		<p>Anthony Durkacz, Founder and Shareholder<br />
+		Zeeshan Saeed, Founder and Shareholder</p>
 	</div>
 </section>
 <!-- / hero -->
