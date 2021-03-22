@@ -567,8 +567,8 @@ header {
 
 @media (max-width: 980px) {
 	.graph {
-		width: 150%;
-		bottom: 2em;
+		width: 200%;
+		bottom: 4em;
 	}
 }
 
