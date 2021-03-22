@@ -556,6 +556,20 @@ header {
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
+	overflow: hidden;
+}
+
+.graph {
+	position: absolute;
+	width: 100%;
+	opacity: .25;
+}
+
+@media (max-width: 980px) {
+	.graph {
+		width: 150%;
+		bottom: 2em;
+	}
 }
 
 .social_and_toggle {
@@ -2136,4 +2150,15 @@ header.up {
 .tabRow a.rotate:after {
 	transform: rotate(180deg);
 	transition: 0.5s ease-in-out;
+}
+
+#graph {
+	animation: move 5s linear;
+	animation-fill-mode: forwards;
+}
+
+@keyframes move {
+100% {
+	stroke-dashoffset: 0;
+}
 }

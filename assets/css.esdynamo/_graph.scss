@@ -1,0 +1,10 @@
+#graph {
+	animation: move 5s linear; 
+	animation-fill-mode: forwards;
+}
+
+@keyframes move {
+    100% {
+        stroke-dashoffset: 0;
+    }
+}

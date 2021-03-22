@@ -3,11 +3,23 @@
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
+	overflow: hidden;
 	//margin-top: 92.77px;
+}
+
+// GRAPH
+.graph {
+	position: absolute;
+	width: 100%;
+	opacity: .25;
 }
 @media (max-width: 980px) {
 	.hero {
 		//margin-top: 85px;
+	}
+	.graph {
+		width: 150%;
+		bottom: 2em;
 	}
 }
 .social_and_toggle {

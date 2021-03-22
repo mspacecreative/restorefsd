@@ -63,6 +63,17 @@
 			$(this).parent().next('.modal_container').find('.modal_inner').addClass('visible');
 		});
 		
+		var path = document.getElementById("graph");
+		var length = path.getTotalLength();
+		path.style.strokeDasharray = length + ' ' + length;
+		path.style.strokeDashoffset = length;
+		
+		// DRAW GRAPH
+		//var myPath = document.getElementById("graph"),
+	   // segment = new Segment(myPath);
+	
+		//segment.draw("0 -100%", -100, 15, null);
+		
 		var $document = $(document);
 		//viewportHeight = $('.splash').height() / 2;
 		$document.scroll(function() {
