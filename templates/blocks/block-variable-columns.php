@@ -322,18 +322,20 @@ if ( $blockanchor && $bgcolor == 'dark' ): ?>
 			
 			<?php elseif ( $modal && $boxedcontent && $headshot ): ?>
 			<div class="col col-lg-4 col-md-4 col-sm-6 col-xs-12 display-flex">
-				<?php if ( !empty($headshot) ): ?>
-				<div class="headshot_container">
-					<img class="headshot" src="<?php echo esc_url($headshot['url']); ?>" alt="<?php echo esc_attr($headshot['alt']); ?>" />
-				</div>
-				<?php endif; ?>
-				<div class="boxed">
-					<?php 
-					$heading = get_sub_field('heading');
-					if ( $heading ) {
-						echo '<h3 class="gold">' . $heading . '</h3>';
-					}
-					echo '<div class="arrow_container">'; include 'includes/icons/arrow.svg'; echo '</div>'; ?>
+				<div class="profile">
+					<?php if ( !empty($headshot) ): ?>
+					<div class="headshot_container">
+						<img class="headshot" src="<?php echo esc_url($headshot['url']); ?>" alt="<?php echo esc_attr($headshot['alt']); ?>" />
+					</div>
+					<?php endif; ?>
+					<div class="boxed">
+						<?php 
+						$heading = get_sub_field('heading');
+						if ( $heading ) {
+							echo '<h3 class="gold">' . $heading . '</h3>';
+						}
+						echo '<div class="arrow_container">'; include 'includes/icons/arrow.svg'; echo '</div>'; ?>
+					</div>
 				</div>
 			</div>
 			

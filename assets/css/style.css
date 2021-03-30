@@ -2186,8 +2186,12 @@ header.up {
 }
 
 .headshot_container ~ .boxed {
-	border-left: none;
+	border: none;
 	flex: 0 0 65%;
+}
+
+.profile {
+	border: 2px solid #e9e9e9;
 }
 
 #graph {
