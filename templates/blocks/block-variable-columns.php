@@ -259,7 +259,7 @@ if ( $blockanchor && $bgcolor == 'dark' ): ?>
 			<?php while( have_rows('columns_grid') ): the_row();
 			
 			$inlinelinks = get_sub_field('inline_links');
-			$headshot = get_field('head_shot');
+			$headshot = get_sub_field('head_shot');
 			
 			if ( $inlinelinks ):
 			
