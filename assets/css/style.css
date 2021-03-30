@@ -2187,7 +2187,7 @@ header.up {
 
 .headshot_container ~ .boxed {
 	border-left: none;
-	flex: au	to;
+	flex: 0 0 auto;
 }
 
 #graph {
