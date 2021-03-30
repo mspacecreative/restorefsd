@@ -2,9 +2,11 @@
 	flex: 0 0 33%;
 }
 .headshot_container img {
+	width: 100%;
 	height: 100%;
 	object-fit: cover;
 }
 .headshot_container ~ .boxed {
 	border-left: none;
+	flex: au	to;
 }
