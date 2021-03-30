@@ -259,6 +259,7 @@ if ( $blockanchor && $bgcolor == 'dark' ): ?>
 			<?php while( have_rows('columns_grid') ): the_row();
 			
 			$inlinelinks = get_sub_field('inline_links');
+			$headshot = get_field('head_shot');
 			
 			if ( $inlinelinks ):
 			
@@ -321,6 +322,9 @@ if ( $blockanchor && $bgcolor == 'dark' ): ?>
 			
 			<?php elseif ( $modal && $boxedcontent ): ?>
 			<div class="col col-lg-4 col-md-4 col-sm-6 col-xs-12">
+				<?php if ( !empty($headshot) ): ?>
+				<img class="headshot" src="<?php echo esc_url($headshot['url']); ?>" alt="<?php echo esc_attr($headshot['alt']); ?>" />
+				<?php endif; ?>
 				<div class="boxed">
 					<?php 
 					$heading = get_sub_field('heading');
