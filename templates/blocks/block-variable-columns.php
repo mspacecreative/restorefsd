@@ -320,8 +320,8 @@ if ( $blockanchor && $bgcolor == 'dark' ): ?>
 				</div>
 			</div>
 			
-			<?php elseif ( $modal && $boxedcontent ): ?>
-			<div class="col col-lg-4 col-md-4 col-sm-6 col-xs-12">
+			<?php elseif ( $modal && $boxedcontent && $headshot ): ?>
+			<div class="col col-lg-4 col-md-4 col-sm-6 col-xs-12 display-flex">
 				<?php if ( !empty($headshot) ): ?>
 				<div class="headshot_container">
 					<img class="headshot" src="<?php echo esc_url($headshot['url']); ?>" alt="<?php echo esc_attr($headshot['alt']); ?>" />
