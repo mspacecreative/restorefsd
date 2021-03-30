@@ -2170,6 +2170,19 @@ header.up {
 	transition: 0.5s ease-in-out;
 }
 
+.headshot_container {
+	flex: 0 0 33%;
+}
+
+.headshot_container img {
+	height: 100%;
+	object-fit: cover;
+}
+
+.headshot_container ~ .boxed {
+	border-left: none;
+}
+
 #graph {
 	animation: move 5s linear;
 	animation-fill-mode: forwards;
