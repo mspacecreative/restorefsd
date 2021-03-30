@@ -2176,7 +2176,7 @@ header.up {
 }
 
 .headshot_container {
-	flex: 0 0 33%;
+	flex: 0 0 35%;
 }
 
 .headshot_container img {
@@ -2187,7 +2187,7 @@ header.up {
 
 .headshot_container ~ .boxed {
 	border-left: none;
-	flex: 1 0 auto;
+	flex: 0 0 65%;
 }
 
 #graph {

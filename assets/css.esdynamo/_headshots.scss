@@ -3,7 +3,7 @@
 	flex-wrap: wrap;
 }
 .headshot_container {
-	flex: 0 0 33%;
+	flex: 0 0 35%;
 }
 .headshot_container img {
 	width: 100%;
@@ -12,5 +12,5 @@
 }
 .headshot_container ~ .boxed {
 	border-left: none;
-	flex: 1 0 auto;
+	flex: 0 0 65%;
 }
