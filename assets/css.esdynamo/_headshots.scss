@@ -1,7 +1,3 @@
-.display-flex {
-	display: flex;
-	flex-wrap: wrap;
-}
 .headshot_container {
 	flex: 0 0 35%;
 }
@@ -16,4 +12,6 @@
 }
 .profile {
 	border: 2px solid #e9e9e9;
+	display: flex;
+	flex-wrap: wrap;
 }

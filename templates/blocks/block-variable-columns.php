@@ -321,7 +321,7 @@ if ( $blockanchor && $bgcolor == 'dark' ): ?>
 			</div>
 			
 			<?php elseif ( $modal && $boxedcontent && $headshot ): ?>
-			<div class="col col-lg-4 col-md-4 col-sm-6 col-xs-12 display-flex">
+			<div class="col col-lg-4 col-md-4 col-sm-6 col-xs-12">
 				<div class="profile">
 					<?php if ( !empty($headshot) ): ?>
 					<div class="headshot_container">
