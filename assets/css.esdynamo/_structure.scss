@@ -200,8 +200,7 @@ header {
 	.col:nth-child(2n+1):nth-last-child(-n+2) ~ .col {
 	    padding-bottom: 0;
 	}
-	#press .col:nth-child(2n+1):nth-last-child(-n+2),
-	#press .col:nth-child(2n+1):nth-last-child(-n+2) ~ .col {
+	#press .col:nth-child(2n+1):nth-last-child(-n+2) {
 		padding-bottom: 1rem;
 	}
 }
