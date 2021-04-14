@@ -550,6 +550,10 @@ header {
 	.col:nth-child(1n+1):nth-last-child(-n+1), .col:nth-child(1n+1):nth-last-child(-n+1) ~ .col, .col:nth-child(2n+1):nth-last-child(-n+2), .col:nth-child(2n+1):nth-last-child(-n+2) ~ .col {
 		padding-bottom: 0;
 	}
+	
+	#press .col:nth-child(2n+1):nth-last-child(-n+2), #press .col:nth-child(2n+1):nth-last-child(-n+2) ~ .col {
+		padding-bottom: 1rem;
+	}
 }
 
 @media (min-width: 64em) {
